@@ -7,6 +7,7 @@ RUN mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backu
 RUN wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 RUN yum makecache
 
-yum install -y net-tools.x86_64
+#install ifconfig
+RUN　yum install -y net-tools.x86_64
 
 
