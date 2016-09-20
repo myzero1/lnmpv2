@@ -8,6 +8,8 @@ RUN wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Cen
 RUN yum makecache
 
 #install ifconfig
-RUN　yum install -y net-tools.x86_64
+RUN yum install -y net-tools.x86_64
+
+
 
 
