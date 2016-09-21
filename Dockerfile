@@ -10,6 +10,11 @@ RUN yum makecache
 #install ifconfig
 RUN yum install -y net-tools.x86_64
 
+# Lnmp Initialization and Startup Script
+ADD ./myzero1_edit_lnmp.sh /myzero1_edit_lnmp.sh
+RUN chmod 755 /myzero1_edit_lnmp.sh
+RUN bash myzero1_edit_lnmp.sh
+
 
 
 
