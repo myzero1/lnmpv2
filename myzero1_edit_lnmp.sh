@@ -11,4 +11,4 @@ sed -i "s|stty -icanon -echo min 1 time 0|#stty -icanon -echo min 1 time 0|g" in
 sed -i "s|dd count=1 2\>\/dev\/null|dd count=1 2\>\/dev\/null|g" include/main.sh
 
 
-bash /opt/source/lnmp1.3/install.sh
+bash /opt/source/lnmp1.3/install.sh lnmp
