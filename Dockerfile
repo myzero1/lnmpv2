@@ -19,6 +19,8 @@ RUN echo "/etc/init.d/nginx start" >> /etc/rc.d/rc.local
 RUN echo "/etc/init.d/php-fpm start" >> /etc/rc.d/rc.local
 RUN echo "/etc/init.d/mysql start" >> /etc/rc.d/rc.local
 
+CMD /etc/rc.d/rc.local
+
 # Lnmp Initialization and Startup Script
 #ADD ./install_phpmyadmin.sh /install_phpmyadmin.sh
 #RUN chmod 755 /install_phpmyadmin.sh
