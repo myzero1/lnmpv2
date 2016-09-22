@@ -15,6 +15,10 @@ ADD ./myzero1_edit_lnmp.sh /myzero1_edit_lnmp.sh
 RUN chmod 755 /myzero1_edit_lnmp.sh
 RUN bash myzero1_edit_lnmp.sh
 
+RUN /etc/init.d/nginx start
+RUN /etc/init.d/mysql start
+RUN /etc/init.d/php-fpm start
+
 # Lnmp Initialization and Startup Script
 #ADD ./install_phpmyadmin.sh /install_phpmyadmin.sh
 #RUN chmod 755 /install_phpmyadmin.sh
