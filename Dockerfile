@@ -16,9 +16,9 @@ RUN chmod 755 /myzero1_edit_lnmp.sh
 RUN bash myzero1_edit_lnmp.sh
 
 # Lnmp Initialization and Startup Script
-ADD ./install_phpmyadmin.sh /install_phpmyadmin.sh
-RUN chmod 755 /install_phpmyadmin.sh
-RUN bash install_phpmyadmin.sh
+#ADD ./install_phpmyadmin.sh /install_phpmyadmin.sh
+#RUN chmod 755 /install_phpmyadmin.sh
+#RUN bash install_phpmyadmin.sh
 
 
 
