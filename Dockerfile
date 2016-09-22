@@ -22,7 +22,7 @@ RUN wget http://dlsw.baidu.com/sw-search-sp/soft/26/14218/phpMyAdmin_4.4.11_all_
 RUN unzip phpMyAdmin_4.4.11_all_languages.1437381213.zip
 RUN cp -rf phpMyAdmin-4.4.11-all-languages /home/wwwroot/default/phpmyadmin
 RUN cd /home/wwwroot/default/phpmyadmin
-RUN cp config.sample.inc.php config.inc.php
+RUN cp config.sample.inc.php config.inc.php 
 
 
 
