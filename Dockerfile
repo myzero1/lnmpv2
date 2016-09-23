@@ -2,8 +2,8 @@ FROM centos:7
 MAINTAINER myzero1 <myzero1@sina.com>
 
 #disable fastestmirror
-RUN sed -i "s/enabled=1/enabled=0" /etc/yum/pluginconf.d/fastestmirror.conf
-RUN sed -i "s/plugins=1/plugins=0" /etc/yum.conf
+RUN sed -i "s|enabled=1|enabled=0|g" /etc/yum/pluginconf.d/fastestmirror.conf
+RUN sed -i "s|plugins=1|plugins=0|g" /etc/yum.conf
 
 # Replace the software sources
 RUN yum install -y wget
