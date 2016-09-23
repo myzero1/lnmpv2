@@ -19,12 +19,13 @@ RUN bash myzero1_edit_lnmp.sh
 # Lnmp Initialization and Startup Script
 ADD ./auto_start.sh /auto_start.sh
 RUN chmod 755 /auto_start.sh
+RUN echo "bash /auto_start.sh" >> /etc/bashrc
 
 #RUN echo "/etc/init.d/nginx start" >> /etc/rc.d/rc.local
 #RUN echo "/etc/init.d/php-fpm start" >> /etc/rc.d/rc.local
 #RUN echo "/etc/init.d/mysql start" >> /etc/rc.d/rc.local
 
-CMD /auto_start.sh
+#CMD /auto_start.sh
 
 # Lnmp Initialization and Startup Script
 #ADD ./install_phpmyadmin.sh /install_phpmyadmin.sh
