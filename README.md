@@ -1,2 +1,2 @@
 # lnmpv2
-centos7
+centos6
