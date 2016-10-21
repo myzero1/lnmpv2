@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:6
 MAINTAINER myzero1 <myzero1@sina.com>
 
 #disable fastestmirror
