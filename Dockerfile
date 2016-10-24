@@ -21,11 +21,6 @@ ADD ./myzero1_edit_lnmp.sh /myzero1_edit_lnmp.sh
 RUN chmod 755 /myzero1_edit_lnmp.sh
 RUN bash myzero1_edit_lnmp.sh
 
-# install and setting vsftpd
-ADD ./install_set_vsftpd.sh /install_set_vsftpd.sh
-RUN chmod 755 /install_set_vsftpd.sh
-RUN bash install_set_vsftpd.sh
-
 # auto_start
 ADD ./auto_start.sh /auto_start.sh
 RUN chmod 755 /auto_start.sh
