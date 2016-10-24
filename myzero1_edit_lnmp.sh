@@ -1,6 +1,6 @@
 mkdir -p /opt/source/
 cd /opt/source/
-wget http://soft.vpser.net/lnmp/lnmp1.3.tar.gz
+wget http://soft3.vpser.net/lnmp/lnmp1.3.tar.gz
 tar -zxvf lnmp1.3.tar.gz
 cd lnmp1.3
 
