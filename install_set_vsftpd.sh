@@ -26,6 +26,7 @@ echo "anon_mkdir_write_enable=YES" >> woogle
 echo "anon_other_write_enable=YES" >> woogle
 
 mkdir /home/woogle
+chmod 777 /home/woogle
 
 cd /etc/vsftpd
 sed -i "s|pam_service_name=vsftpd|#pam_service_name=vsftpd |g" vsftpd.conf
