@@ -13,6 +13,6 @@ fi
 
 
 /etc/init.d/nginx restart
-/etc/init.d/php-fpm restart
+/etc/init.d/php-fpm start
 /etc/init.d/mysql restart
 /etc/init.d/vsftpd restart
