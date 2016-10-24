@@ -4,6 +4,8 @@ wget http://soft3.vpser.net/lnmp/lnmp1.3.tar.gz
 tar -zxvf lnmp1.3.tar.gz
 cd lnmp1.3
 
+sed -i "s|Download_Mirror=\'http://soft.vpser.net\'|Download_Mirror=\'http://soft3.vpser.net\'|g" include/main.sh
+
 sed -i "s|read|#read|g" include/main.sh
 sed -i "s|DBSelect=\"2\"|DBSelect=\"3\"|g" include/main.sh
 sed -i "s|OLDCONFIG=`stty -g`|#OLDCONFIG=`stty -g`|g" include/main.sh
