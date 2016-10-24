@@ -27,6 +27,7 @@ echo "anon_other_write_enable=YES" >> woogle
 
 mkdir /home/woogle
 
+cd /etc/vsftpd
 sed -i "s|pam_service_name=vsftpd|#pam_service_name=vsftpd |g" vsftpd.conf
 echo "guest_enable=YES" >> vsftpd.conf
 echo "guest_username=vuser" >> vsftpd.conf
