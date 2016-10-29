@@ -13,8 +13,16 @@ RUN wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Cen
 RUN yum clean all
 RUN yum makecache
 
-#install ifconfig
+#install tools
 RUN yum install -y net-tools.x86_64
+RUN yum install -y gcc-c++
+RUN yum install -y yum install openssl*
+RUN yum install -y yum yum install intltool
+
+#install mwget
+ADD ./install_mwget.sh /install_mwget.sh
+RUN chmod 755 /install_mwget.sh
+RUN bash install_mwget.sh
 
 # Lnmp Initialization and Startup Script
 ADD ./myzero1_edit_lnmp.sh /myzero1_edit_lnmp.sh
