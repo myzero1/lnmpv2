@@ -4,7 +4,7 @@ cd /opt/source/
 #tar -zxvf lnmp1.3.tar.gz
 #cd lnmp1.3
 
-wget http://d.139.sh/2250743895/lnmp1.3-full.tar.gz -f lnmp1.3-full.tar.gz
+wget http://d.139.sh/2250743895/lnmp1.3-full.tar.gz
 #wget http://pan.plyz.net/d.asp?u=2250743895&p=lnmp1.3-full.tar.gz
 tar -zxvf lnmp1.3-full.tar.gz
 cd lnmp1.3-full
@@ -19,4 +19,4 @@ sed -i "s|stty -icanon -echo min 1 time 0|#stty -icanon -echo min 1 time 0|g" in
 sed -i "s|dd count=1 2\>\/dev\/null|dd count=1 2\>\/dev\/null|g" include/main.sh
 
 
-bash /opt/source/lnmp1.3/install.sh
+bash /opt/source/lnmp1.3-full/install.sh
