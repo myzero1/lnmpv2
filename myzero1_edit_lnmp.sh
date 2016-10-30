@@ -4,8 +4,9 @@ cd /opt/source/
 #tar -zxvf lnmp1.3.tar.gz
 #cd lnmp1.3
 
-wget http://d.139.sh/2250743895/lnmp1.3-full.tar.gz
+#wget http://d.139.sh/2250743895/lnmp1.3-full.tar.gz
 #wget http://pan.plyz.net/d.asp?u=2250743895&p=lnmp1.3-full.tar.gz
+python -m mwget.multiwget 'http://d.139.sh/2250743895/lnmp1.3-full.tar.gz'
 tar -zxvf lnmp1.3-full.tar.gz
 cd lnmp1.3-full
 
