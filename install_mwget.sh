@@ -7,7 +7,7 @@ cd /opt/source/mwget
 
 wget http://d.139.sh/2250743895/setuptools-28.7.1.zip
 uzip setuptools-28.7.1.zip
-cd setuptools-28.7.1.zip
+cd setuptools-28.7.1
 python setup.py install
 
 wget http://d.139.sh/2250743895/pip-1.5.5.tar.gz
