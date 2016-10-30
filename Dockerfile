@@ -19,6 +19,7 @@ RUN yum install -y gcc-c++
 RUN yum install -y openssl*
 RUN yum install -y intltool
 RUN yum install -y xz
+RUN yum install -y uzip
 
 #install mwget
 ADD ./install_mwget.sh /install_mwget.sh
