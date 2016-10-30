@@ -1,12 +1,12 @@
 mkdir -p /opt/source/mwget
 cd /opt/source/mwget
 
-#wget -q http://d.139.sh/2250743895/ez_setup.py
-wget -q https://bootstrap.pypa.io/ez_setup.py
+wget -q http://d.139.sh/2250743895/ez_setup.py
+#wget -q https://bootstrap.pypa.io/ez_setup.py
 python ez_setup.py
 
 wget http://d.139.sh/2250743895/pip-1.5.5.tar.gz
-tar zvxf 1.5.5.tar.gz
+tar zvxf pip-1.5.5.tar.gz
 cd pip-1.5.5/
 python setup.py install
 
