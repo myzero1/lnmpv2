@@ -16,8 +16,9 @@ RUN yum makecache
 #install tools
 RUN yum install -y net-tools.x86_64
 RUN yum install -y gcc-c++
-RUN yum install -y yum install openssl*
-RUN yum install -y yum install intltool
+RUN yum install -y openssl*
+RUN yum install -y intltool
+RUN yum install -y xz
 
 #install mwget
 ADD ./install_mwget.sh /install_mwget.sh
