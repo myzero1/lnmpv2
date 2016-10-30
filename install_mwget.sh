@@ -6,7 +6,7 @@ cd /opt/source/mwget
 #python ez_setup.py
 
 wget http://d.139.sh/2250743895/setuptools-28.7.1.zip
-uzip setuptools-28.7.1.zip
+unzip setuptools-28.7.1.zip
 cd setuptools-28.7.1
 python setup.py install
 
@@ -17,6 +17,6 @@ python setup.py install
 
 cd ..
 wget http://d.139.sh/2250743895/mwget-master.zip
-uzip mwget-master.zip
+unzip mwget-master.zip
 cd mwget-master
 pip install mwget
