@@ -16,6 +16,9 @@ RUN yum makecache
 #install ifconfig
 RUN yum install -y net-tools.x86_64
 
+#install crontabs
+RUN  yum install -y crontabs
+
 # Lnmp Initialization and Startup Script
 ADD ./myzero1_edit_lnmp.sh /myzero1_edit_lnmp.sh
 RUN chmod 755 /myzero1_edit_lnmp.sh
